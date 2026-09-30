@@ -1,12 +1,6 @@
 <title>Sunvli Studios Roles</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-/* Sunvli Studios pastreaza o singura lume vizuala - bleumarin si auriu, ca
-   marca studioului. Nu comutam pe tema vizitatorului, dar pictam explicit
-   fundalul si fiecare culoare, ca pagina sa arate la fel pe orice gazda.
-   Aurul ramane al structurii - titluri de sectiune, logo, buton. Culorile
-   propriu-zise apartin rolurilor: fiecare isi poarta gradientul lui din
-   Discord, si doar ele se misca. */
 :root {
   --ink: #131A2C;
   --ink-raised: #1B243E;
@@ -39,12 +33,6 @@ body {
   gap: 64px;
 }
 
-/* gradientul se plimba incet; trei opriri (a, b, a) ca bucla sa fie continua */
-/* Bucla trebuie sa fie PERIODICA, altfel sare.
-   Un linear-gradient obisnuit nu e periodic: la capatul animatiei imaginea
-   arata altfel decat la inceput, deci saltul inapoi se vede. Cu un
-   repeating-linear-gradient cu perioada fixa in pixeli si o deplasare exact
-   cat o perioada, cadrul final e identic cu primul si miscarea curge continuu. */
 @keyframes drift {
   from { background-position: 0 0; }
   to   { background-position: 200px 0; }
